@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scraping Results</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #ff6f00; padding: 20px; color: white; text-align: center; }
+    .container { max-height: 600px; overflow-y: scroll; margin: 20px auto; width: 95%; border-radius: 10px; border: 1px solid #ddd; background: white; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
+    th { background: #ff6f00; color: white; position: sticky; top: 0; }
+    tr:hover { background: #f9f9f9; }
+    img { max-width: 80px; border-radius: 6px; }
+    .download { display: block; margin: 20px auto; padding: 12px; background: #ff6f00; color: white; text-align: center; width: 200px; border-radius: 8px; text-decoration: none; }
+    .download:hover { background: #e65c00; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scraped Products</h1>
+  </header>
+  <div class="container">
+    <table>
+      <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>URL</th>
+      </tr>
+      {% for p in products %}
+      <tr>
+        <td>{% if p.image %}<img src="{{ p.image }}">{% endif %}</td>
+        <td>{{ p.title }}</td>
+        <td>{{ p.price }}</td>
+        <td><a href="{{ p.url }}" target="_blank">View</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <a href="/download" class="download">Download CSV</a>
+</body>
+</html>
