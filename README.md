@@ -1,4 +1,5 @@
 # Daraz Global Scraper
+![Alt text for the image](darazscrap.jpeg)
 
 ## Overview
 Daraz Global Scraper is a Python-based web scraping project that allows users to scrape product information from Daraz (Bangladesh) and view it in a professional web interface. The project uses **Selenium** for dynamic content scraping and **Flask** to provide a user-friendly web interface. Scraped data can also be exported to a **CSV file** for further analysis.
