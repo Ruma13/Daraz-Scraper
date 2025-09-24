@@ -76,7 +76,7 @@ http://127.0.0.1:5000
 5. Click **Scrape**.
 6. View results in a **scrollable table** with product images and prices.
 7. Download the scraped data as a **CSV file** using the "Download CSV" button.
-
+![Alt text for the image](download-csv.jpg)
 ---
 
 ## How it Works
