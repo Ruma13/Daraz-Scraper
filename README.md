@@ -40,7 +40,6 @@ DarazScraper/
 │   ├─ index.html         # Homepage with search bar
 │   └─ results.html       # Scrape results page
 └─ static/
-└─ exports/
 └─ daraz\_products.csv  # Generated CSV file
 
 ````
